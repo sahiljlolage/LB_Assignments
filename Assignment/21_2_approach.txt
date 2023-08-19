@@ -1,0 +1,39 @@
+void Display(char ch)
+{   
+    int ArrUpper[26];
+    int ArrLower[26];
+    char c = '0';
+    int index = 0;
+    int iCnt = 0;
+
+    for(c = 'A';c = 'Z';c++)
+    {
+        ArrUpper[index++] = c;
+    } 
+    index = 0;
+    for(c = 'a';c = 'z';c++)
+    {
+        ArrLower[index++] = c;
+    } 
+    if(ch = 'A' && ch = 'Z'  ch = 'a' && ch = 'z')
+    {
+        for(iCnt = 0; iCnt  25; iCnt++)
+        {
+            if(ch == ArrUpper[iCnt])
+            {
+                printf(%c,ArrLower[iCnt]);
+                break;
+            }
+            if(ch == ArrLower[iCnt])
+            {
+                printf(%c,ArrUpper[iCnt]);
+            }
+        } 
+    }
+    else
+    {
+        printf(%c,ch) ;
+    }
+    
+    
+}
